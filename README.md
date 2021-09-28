@@ -1,3 +1,6 @@
 # Pendulo-Intro-F-sica-
-integrantes:jajaj
+integrantes:
+              Daniel Parra Parra 2191072
+              
+            
 
