@@ -1,8 +1,8 @@
 # Pendulo-Intro-Física 
-*      /\ ___ /\        Integrantes:
-      (  o   o  )                   Daniel Parra Parra 2191072
-       \  >#<  /                    Karol Fernanda Guarín Velásquez 2203026
-       /       \                    David Ricardo Moreno Díaz 2210697
+*      /\ ___ /\       Daniel 
+      (  o   o  )            Parra      
+       \  >#<  /                  Parra 
+       /       \                       2191072 
       /         \        
      
 
