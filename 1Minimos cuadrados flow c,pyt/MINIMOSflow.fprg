@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="DANIEL PARRA"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-24 03:32:28 p. m."/>
+        <attribute name="created" value="REFOSUVMIFBBUlJBO0RFU0tUT1AtUTNTVTNHNDsyMDIyLTExLTI0OzAyOjU0OjUzIHAuIG0uOzMzNTc="/>
+        <attribute name="edited" value="REFOSUVMIFBBUlJBO0RFU0tUT1AtUTNTVTNHNDsyMDIyLTExLTI0OzAzOjAyOjEwIHAuIG0uOzI7Q0VOVElDOzItOS0xMjsyMDIyLTExLTIzOzA4OjQxOjIwIGEuwqBtLjtwYXJyYS5mcHJnOzY4ODk="/>
+        <attribute name="edited" value="REFOSUVMIFBBUlJBO0RFU0tUT1AtUTNTVTNHNDsyMDIyLTExLTI0OzAzOjMyOjI4IHAuIG0uOzE7MzQ2NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;DANIEL PARRA^2- 2191072&quot;" newline="True"/>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <declare name="X, Y" type="Real" array="True" size="n"/>
+            <declare name="i, e" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="0"/>
+            <while expression="i&lt;n">
+                <input variable="e"/>
+                <assign variable="X[i]" expression="e"/>
+                <assign variable="i" expression="i+1"/>
+            </while>
+            <assign variable="i" expression="0"/>
+            <while expression="i&lt;n">
+                <input variable="e"/>
+                <assign variable="Y[i]" expression="e"/>
+                <assign variable="i" expression="i+1"/>
+            </while>
+            <declare name="sum1, sum2, sum3, sum4, sum5, sum6, sum7" type="Real" array="False" size=""/>
+            <assign variable="sum1" expression="0"/>
+            <assign variable="sum2" expression="0"/>
+            <assign variable="sum3" expression="0"/>
+            <assign variable="sum4" expression="0"/>
+            <assign variable="sum5" expression="0"/>
+            <assign variable="sum6" expression="0"/>
+            <assign variable="sum7" expression="0"/>
+            <assign variable="i" expression="0"/>
+            <while expression="i&lt;n">
+                <assign variable="sum1" expression="sum1+X[i]*Y[i]"/>
+                <assign variable="sum2" expression="sum2 +X[i]"/>
+                <assign variable="sum3" expression="sum3+ Y[i]"/>
+                <assign variable="sum4" expression="sum4+(X[i]*X[i])"/>
+                <assign variable="sum5" expression="sum5+X[i]"/>
+                <assign variable="sum6" expression="sum6 +Y[i]"/>
+                <assign variable="sum7" expression="sum7 +X[i]"/>
+                <assign variable="i" expression="i+1"/>
+            </while>
+            <declare name="a, b" type="Real" array="False" size=""/>
+            <assign variable="a" expression="(n*sum1-sum2*sum3)/(n*sum4-sum5*sum5)"/>
+            <assign variable="b" expression="(sum6-a*sum7)/n"/>
+            <output expression="a" newline="True"/>
+            <output expression="b" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
