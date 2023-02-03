@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="DANIEL PARRA"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-18 09:03:49 a. m."/>
+        <attribute name="created" value="REFOSUVMIFBBUlJBO0RFU0tUT1AtUTNTVTNHNDsyMDIyLTExLTE4OzA4OjE5OjEzIGEuIG0uOzMzNDg="/>
+        <attribute name="edited" value="REFOSUVMIFBBUlJBO0RFU0tUT1AtUTNTVTNHNDsyMDIyLTExLTE4OzA5OjAzOjQ5IGEuIG0uOzI7MzQ2MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i" type="Integer" array="False" size=""/>
+            <declare name="suma, elemento, promedio" type="Real" array="False" size=""/>
+            <assign variable="suma" expression="0.0"/>
+            <assign variable="i" expression="0"/>
+            <input variable="n"/>
+            <while expression="i&lt;n">
+                <input variable="elemento"/>
+                <assign variable="suma" expression="suma+elemento"/>
+                <assign variable="i" expression="i+1"/>
+            </while>
+            <assign variable="promedio" expression="suma/n"/>
+            <output expression="promedio" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
